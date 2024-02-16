@@ -74,6 +74,8 @@ class TestGame:
         Result(player, game, 5000)
         Result(player_2, game, 4999)
 
+        print(game.players())
+
         assert player in game.players()
         assert player_2 in game.players()
         assert player_3 not in game.players()
